@@ -1,5 +1,213 @@
-Welcome to the 0th version of my website! Thank you!
-Here is a rotatable structure of ethylene:
-<script type="text/javascript" 
-src="https://chemapps.stolaf.edu/jmol/jmol.php?model=ethylene&inline">
-</script>
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Changming Liu</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />    
+	<link href="css/style.css" rel="stylesheet" />
+</head>
+<!--
+
+Changming's website version 0
+20210212
+
+-->
+<body> 
+
+	<div class="container">
+	<!-- Top box -->
+		<!-- Logo & Site Name -->
+		<div class="placeholder">
+			<div class="parallax-window" data-parallax="scroll" data-image-src="img/index_background.jpg">
+				<div class="tm-header">
+					<div class="row tm-header-inner">
+						<div class="col-md-6 col-12">
+							<img src="img/index_logo.jpg" alt="Logo" class="tm-site-logo" height=60/> 
+							<div class="tm-site-text-box">
+								<h1 class="tm-site-title">Changming Liu</h1>
+								<h6 class="tm-site-description">University of Virginia</h6>	
+							</div>
+						</div>
+						<nav class="col-md-6 col-12 tm-nav">
+							<ul class="tm-nav-ul">
+								<li class="tm-nav-li"><a href="index.html" class="tm-nav-link active">Home</a></li>
+								<li class="tm-nav-li"><a href="#contact_info" class="tm-nav-link">Contact</a></li>
+							</ul>
+						</nav>	
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<main>
+			<header class="row tm-welcome-section">
+				<p class="col-20">Hello! I am currently a third-year graduate student at University of Virginia. My current focus is ethylene epoxidation. This catalytic reaction takes place on the silver surface and we are studying the surface intermediates using density functional theroy (DFT), <i>ab initio</i> thermodynamics, Raman Spectroscopy and machine learning. Here is the website of our lab: <a href="http://cpaolucc.github.io">Paolucci Group</a></p>
+			</header>
+
+			<div class="tm-paging-links">
+				<nav>
+					<ul>
+						<li class="tm-paging-item"><a href="#" id="123" class="tm-paging-link active">Undergraduate-Study</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Graduate-Study</a></li>
+						<li class="tm-paging-item"><a href="#" class="tm-paging-link">Working-Experiences</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Gallery -->
+			<div class="row tm-gallery">
+				<!-- gallery page 1 -->
+				<div id="tm-gallery-page-undergraduate-study" class="tm-gallery-page">
+					<p class="row tm-welcome-section"> I majored in pharmaceutical engineering in East China University of Science and Technology (ECUST) from 2011 to 2015, and graduated with a B.E. degree. </p>
+
+					<div class="figurea">
+						<p><img src="img/ecust1.jpg" style="width:30%">
+							<img src="img/ecust2.jpg" style="width:30%">
+							<img src="img/ecust3.jpg" style="width:30%">
+						</p>
+						<figcaptiona>ECUST Campus (photos are from <a rel="nofollow" href="http://www2.ecust.edu.cn">ECUST</a>)</figcaptiona>
+					</div>
+					
+				</div> <!-- gallery page 1 -->
+
+				<!-- gallery page 2 -->
+				<div id="tm-gallery-page-graduate-study" class="tm-gallery-page hidden">
+					<p class="row tm-welcome-section"> Since I joined University of Virginia in 2018, I have been using computational tools to study ethylene epoxidation, a catalytic reaction on the Ag surface. My work can be summaried as below:</p>
+				<!-- subsection begins-->
+				<div class="tm-section tm-container-inner">
+					<div class="row">
+						<div class="col-cust">
+							<figure class="tm-description-figure">
+								<img src="img/phase-diagram.png" alt="Image" class="img-fluid" />
+							</figure>
+						</div>
+						<div class="col-md-6">
+							<div class="tm-description-box"> 
+								<h4 class="tm-gallery-title">Ab Initio Thermodynamics</h4>
+								<p style="font-size:18px;">&#8665 To understand the relative stability of different structures under experimental conditions, we used density functional theory (DFT) and <i>ab initio</i> thermodynamics as the tools to calculate Gibbs free energy as a function of temperature and pressure.</p>
+							</div>
+						</div>
+					</div>
+				<hr style="height:2px;border-width:0;color:gray;background-color:gray">
+				</div>
+				<!-- subsection ends-->
+
+				<!-- subsection begins-->
+				<div class="tm-section tm-container-inner">
+
+					<div class="row">
+
+						<div class="col-md-6">
+							<div class="tm-description-box"> 
+								<h4 class="tm-gallery-title">DFT-based Vibrational Frequency & Raman Intensity Calculation
+								<p style="font-size:18px;padding-bottom:30px;padding-top:30px;">&#8664 A simulated Raman intensity vs. frequency plot for a given crystal is acquired by a two-step calculation. We first use harmonic approximations to compute the vibrational frequencies (normal modes) from the Hessian matrix. The second step is to compute the polarizability change (Raman tensor) of the crystal at each frequency, with an external electric field applied to the system. </p>	
+								<p style="font-size:18px;padding-bottom:30px;">&#8663 The equations governing the second step can be found here: (Liang, Qiaohao, Shyam Dwaraknath, and Kristin A. Persson. "High-throughput computation and evaluation of raman spectra." Scientific data 6.1 (2019): 1-7.)</p>
+
+							</div>
+
+						</div>
+
+						<div class="col-cust">
+
+							<figure class="tm-description-figure">
+								<img src="img/raman.png" alt="Image" class="img-fluid" />
+							</figure>
+
+						</div>
+					</div>
+				<hr style="height:2px;border-width:0;color:gray;background-color:gray">	
+				</div>
+				<!-- subsection ends-->
+
+				<!-- subsection begins-->
+								<div class="tm-section tm-container-inner">
+
+									<div class="row">
+										<div class="col-cust">
+
+											<figure class="tm-description-figure">
+												<img src="img/scheme.svg" alt="Image" class="img-fluid" />
+											</figure>
+										</div>
+										<div class="col-md-6">
+											<div class="tm-description-box"> 
+												<h4 class="tm-gallery-title">Machine Learning on Ag-O Systems</h4>
+												<p style="font-size:18px;">&#8665 We tried different machine learning algorithms (linear regression, Gaussian regression, and neural network) to study the atomic interactions on the catalyst surface. The current neural network model is two hidden-layers deep and shows an elegant prediction of energetics and forces within the structure. The main goal of machine learning is to enable us to run faster molecular dynamics simulations with substantially larger systems with reliable accuracy. </p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- subsection ends-->
+
+				</div> <!-- gallery page 2 -->
+				
+				<!-- gallery page 3 -->
+
+				<div id="tm-gallery-page-working-experiences" class="tm-gallery-page hidden">
+					<h4 class="tm-gallery-title" style="padding:20px">2015-2016</h4>
+					<p style="font-size:18px;padding:20px">I worked as a <b>lab researcher</b> in a biotechnology company BGI.GBI in Beijing, China. I was responsible for effectiveness assessment and quality control of our products.</p>
+					<h4 class="tm-gallery-title" style="padding:20px">2017-2018</h4>
+					<p style="font-size:18px;padding:20px;">I was a <b>research assistant</b> in the Department of Chemical Engineering, Tsinghua University, China. I performed biochemistry and electrochemistry experiments as well as carrying out routine lab maintenance./p>
+
+				</div> <!-- gallery page 3 -->
+			</div>
+			<div class="tm-section tm-container-inner">
+				<h4 class="tm-gallery-title">Publications</h4>				
+<p style="font-size:18px;">&#9830 Wang, Kaidong, et al. "In-situ insertion of carbon nanotubes into metal-organic frameworks-derived α-Fe2O3 polyhedrons for highly sensitive electrochemical detection of nitrite." Electrochimica Acta 285 (2018): 128-138. </p>
+<p style="font-size:18px;">&#9830Zhang, Chen, et al. "In silico prediction of hERG potassium channel blockage by chemical category approaches." Toxicology research 5.2 (2016): 570-582.</p>
+<p style="font-size:18px;">&#9830Working on a co-first-author paper and a co-author paper. Plan to publish by 2021 Fall.		</p>		
+			</div>
+
+
+<div class="tm-section tm-container-inner">
+
+					<div class="row" id="contact_info">
+						<div class="col-md-6">
+							<div class="tm-description-box"> 
+								<h4 class="tm-gallery-title" style="padding-top:40px">Contact Information</h4>
+								<p style="font-size:18px;">University of Virginia</p>
+								<p style="font-size:18px;">Chemical Engineering</p>
+								<p style="font-size:18px;">Wilsdorf Hall</p>
+								<p style="font-size:18px;">Charlottesville, VA 22903</p>
+								<p style="font-size:18px;">Phone: (434) 249-2871</p>
+								<p style="font-size:18px;">Email: cl6jw@virginia.edu</p>
+							</div>
+						</div>
+						<div class="col-cust">
+
+							<figure class="tm-description-figure" style="padding-top:40px;">
+								<img src="img/changming.jpg" alt="Image" class="img-fluid" width="200" />
+							</figure>
+						</div>
+
+					</div>
+				</div>
+
+
+		</main>
+
+		<footer class="tm-footer text-center">
+			<p>Design: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+		</footer>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			// Handle click on paging links
+			$('.tm-paging-link').click(function(e){
+				e.preventDefault();
+				
+				var page = $(this).text().toLowerCase();
+				$('.tm-gallery-page').addClass('hidden');
+				$('#tm-gallery-page-' + page).removeClass('hidden');
+				$('.tm-paging-link').removeClass('active');
+				$(this).addClass("active");
+			});
+		});
+	</script>
+</body>
+</html>
